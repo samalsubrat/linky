@@ -15,8 +15,6 @@ This project provides an AI-powered chatbot that allows users to ask questions a
 
 **Installation:**
 
-**(This section will depend on your specific implementation. Update it based on your chosen framework)**
-
 1. Clone this repository.
 2. Install required dependencies (`npm install`).
 3. Follow any additional setup instructions specific to your framework.
