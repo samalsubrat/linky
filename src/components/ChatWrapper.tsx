@@ -15,7 +15,7 @@ const ChatWrapper = ({
   initialMessages: MessageType[];
 }) => {
   const { url } = useParams();
-  const [previewUrl, setPreviewUrl] = useState("");  // Start with empty string
+  const [previewUrl, setPreviewUrl] = useState("");
 
   const { messages, handleInputChange, handleSubmit, input, setInput } =
     useChat({
@@ -37,10 +37,7 @@ const ChatWrapper = ({
   useEffect(() => {
     if (url && Array.isArray(url)) {
       const reconstructedUrl = reconstructUrl(url);
-      // Prevent self-referential preview
-      if (!reconstructedUrl.includes('liinky.vercel.app')) {
-        setPreviewUrl(reconstructedUrl);
-      }
+      setPreviewUrl(reconstructedUrl);
     }
   }, [url]);
 
@@ -75,10 +72,11 @@ const ChatWrapper = ({
                 src={previewUrl}
                 className="w-full h-full"
                 title="Browser Preview"
+                sandbox="allow-same-origin allow-scripts"
               />
             ) : (
               <div className="flex items-center justify-center h-full text-zinc-500">
-                You&apos;re all set!
+                You're all set!
                 <br />
                 Ask your first question to get started.
               </div>
