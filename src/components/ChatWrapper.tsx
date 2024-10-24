@@ -36,11 +36,13 @@ const ChatWrapper = ({
 
   useEffect(() => {
     if (url && Array.isArray(url)) {
-      console.log("Params URL:", url);  
-      const reconstructedUrl = reconstructUrl(url); // Use the utility to reconstruct the URL
-      setPreviewUrl(reconstructedUrl); // Set the iframe URL
+      const reconstructedUrl = reconstructUrl(url);
+      if (previewUrl !== reconstructedUrl) {
+        setPreviewUrl(reconstructedUrl); // Only update if it's different
+      }
     }
-  }, [url]);
+  }, [url, previewUrl]);
+  
 
   return (
     <div className="flex h-screen bg-zinc-900">
