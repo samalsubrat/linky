@@ -22,7 +22,7 @@ This project provides an AI-powered chatbot that allows users to ask questions a
 **Usage:**
 
 1. Run the application using the designated script (`npm run dev`).
-2. Enter the URL you want to analyze. (after `http://localhost:3000/`)
+2. Enter the URL you want to analyze. (after `https://liinky.vercel.app//`)
 3. Ask your questions related to the webpage content.
 4. The chatbot will answer your questions based on its understanding of the website.
 

@@ -33,6 +33,6 @@ export function constructMetadata({
       creator: '@samalsubrat',
     },
     icons,
-    metadataBase: new URL("http://localhost:3000/")
+    metadataBase: new URL("https://liinky.vercel.app//")
   }
 }

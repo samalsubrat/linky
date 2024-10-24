@@ -22,7 +22,7 @@ export default function AboutPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const fullUrl = `http://localhost:3000/${link}`;
+    const fullUrl = `https://liinky.vercel.app//${link}`;
     router.push(fullUrl);
   };
   return (
@@ -137,7 +137,7 @@ export default function AboutPage() {
                     </Button>
                   </div>
                   <p className="mt-4 text-zinc-400">
-                    Your link will be prefixed with: http://localhost:3000/
+                    Your link will be prefixed with: https://liinky.vercel.app//
                   </p>
                 </form>
               </DialogContent>
