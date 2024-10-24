@@ -43,7 +43,7 @@ const ChatWrapper = ({
 
   return (
     <div className="flex h-screen bg-zinc-900">
-      <div className="w-3/5 flex flex-col">
+      <div className="w-full md:w-3/5 flex flex-col">
         <div className="flex-1 overflow-hidden">
           <div className="h-full overflow-y-auto px-4 py-6" id="chat-messages">
             <div className="max-w-3xl mx-auto space-y-4">
@@ -52,7 +52,7 @@ const ChatWrapper = ({
             </div>
           </div>
         </div>
-        <div className="shrink-0 bg-zinc-900 py-4">
+        <div className="shrink-0 bg-zinc-900 py-4 max-sm:pl-4">
           <ChatInput
             input={input}
             handleInputChange={handleInputChange}
@@ -61,7 +61,7 @@ const ChatWrapper = ({
           />
         </div>
       </div>
-      <div className="w-2/5 border-l border-zinc-700">
+      <div className="hidden md:block md:w-2/5 border-l border-zinc-700">
         <div className="h-full flex flex-col">
           <div className="bg-zinc-800 p-2 text-white text-sm">
             Browser Preview
