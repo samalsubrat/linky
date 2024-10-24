@@ -30,9 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} min-h-screen antialiased`}
       >
         <Providers>
-          <main className="h-screen dark text-foreground bg-background">
-            {children}
-          </main>
+          <main className="dark text-foreground bg-background">{children}</main>
         </Providers>
       </body>
     </html>

@@ -27,7 +27,7 @@ const page = async ({ params }: PageProps) => {
     reconstructedUrl
   );
 
-  const initialMessages = await ragChat.history.getMessages({amount: 5, sessionId})
+  const initialMessages = await ragChat.history.getMessages({amount: 15, sessionId})
 
   if (!isAlreadyIndexed) {
     await ragChat.context.add({
