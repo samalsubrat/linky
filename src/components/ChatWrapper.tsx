@@ -4,8 +4,8 @@ import { Message as MessageType, useChat } from "ai/react";
 import { Messages } from "./Messages";
 import { ChatInput } from "./ChatInput";
 import { useEffect, useRef, useState } from "react";
-import { useParams } from "next/navigation"; // Use this if you're using the App directory
-import { reconstructUrl } from "../lib/reconstructUrl"; // Import the utility
+import { useParams } from "next/navigation";
+import { reconstructUrl } from "../lib/reconstructUrl";
 
 const ChatWrapper = ({
   sessionId,
@@ -14,8 +14,8 @@ const ChatWrapper = ({
   sessionId: string;
   initialMessages: MessageType[];
 }) => {
-  const { url } = useParams(); // Extract URL params from Next.js client-side routing
-  const [previewUrl, setPreviewUrl] = useState("https://example.com");
+  const { url } = useParams();
+  const [previewUrl, setPreviewUrl] = useState("");  // Start with empty string
 
   const { messages, handleInputChange, handleSubmit, input, setInput } =
     useChat({
@@ -37,12 +37,12 @@ const ChatWrapper = ({
   useEffect(() => {
     if (url && Array.isArray(url)) {
       const reconstructedUrl = reconstructUrl(url);
-      if (previewUrl !== reconstructedUrl) {
-        setPreviewUrl(reconstructedUrl); // Only update if it's different
+      // Prevent self-referential preview
+      if (!reconstructedUrl.includes('liinky.vercel.app')) {
+        setPreviewUrl(reconstructedUrl);
       }
     }
-  }, [url, previewUrl]);
-  
+  }, [url]);
 
   return (
     <div className="flex h-screen bg-zinc-900">
@@ -70,11 +70,19 @@ const ChatWrapper = ({
             Browser Preview
           </div>
           <div className="flex-1 bg-white">
-            <iframe
-              src={previewUrl}
-              className="w-full h-full"
-              title="Browser Preview"
-            />
+            {previewUrl ? (
+              <iframe
+                src={previewUrl}
+                className="w-full h-full"
+                title="Browser Preview"
+              />
+            ) : (
+              <div className="flex items-center justify-center h-full text-zinc-500">
+                You&apos;re all set!
+                <br />
+                Ask your first question to get started.
+              </div>
+            )}
           </div>
         </div>
       </div>
