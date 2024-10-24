@@ -76,7 +76,7 @@ const ChatWrapper = ({
               />
             ) : (
               <div className="flex items-center justify-center h-full text-zinc-500">
-                You're all set!
+                You&apos;re all set!
                 <br />
                 Ask your first question to get started.
               </div>
