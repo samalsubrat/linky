@@ -32,14 +32,14 @@ export default function FeaturesPage() {
      <Navbar/>
 
       <main className="container mx-auto px-4 pb-16 pt-32">
-        <h1 className="text-4xl font-bold mb-8 text-center">ChatLinky Features</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">Linky Features</h1>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
             <MessageSquare className="w-12 h-12 text-blue-500 mb-4" />
             <h2 className="text-2xl font-semibold mb-2">Natural Language Processing</h2>
             <p className="text-zinc-300">
-              Our advanced NLP algorithms enable ChatLinky to understand context, sentiment, and nuance in human language, providing more accurate and helpful responses.
+              Our advanced NLP algorithms enable Linky to understand context, sentiment, and nuance in human language, providing more accurate and helpful responses.
             </p>
           </div>
 
@@ -47,7 +47,7 @@ export default function FeaturesPage() {
             <Zap className="w-12 h-12 text-blue-500 mb-4" />
             <h2 className="text-2xl font-semibold mb-2">Real-time Learning</h2>
             <p className="text-zinc-300">
-              ChatLinky continuously learns from interactions, improving its knowledge base and response quality over time to provide ever-evolving, up-to-date assistance.
+              Linky continuously learns from interactions, improving its knowledge base and response quality over time to provide ever-evolving, up-to-date assistance.
             </p>
           </div>
 
@@ -71,7 +71,7 @@ export default function FeaturesPage() {
             <Cpu className="w-12 h-12 text-blue-500 mb-4" />
             <h2 className="text-2xl font-semibold mb-2">Customizable AI Models</h2>
             <p className="text-zinc-300">
-              Tailor ChatLinky to your specific needs with customizable AI models that can be trained on your industry-specific data and terminology.
+              Tailor Linky to your specific needs with customizable AI models that can be trained on your industry-specific data and terminology.
             </p>
           </div>
 
@@ -79,20 +79,20 @@ export default function FeaturesPage() {
             <Bot className="w-12 h-12 text-blue-500 mb-4" />
             <h2 className="text-2xl font-semibold mb-2">Seamless Integration</h2>
             <p className="text-zinc-300">
-              Easily integrate ChatLinky into your existing platforms and workflows with our comprehensive API and developer tools.
+              Easily integrate Linky into your existing platforms and workflows with our comprehensive API and developer tools.
             </p>
           </div>
         </div>
 
         <div className="text-center mt-16">
-          <h2 className="text-2xl font-semibold mb-4">Ready to Experience ChatLinky?</h2>
+          <h2 className="text-2xl font-semibold mb-4">Ready to Experience Linky?</h2>
           <Dialog>
               <DialogTrigger asChild>
                 <Button
                   className="mt-5 bg-blue-700 hover:bg-blue-800 text-white"
                   size="lg"
                 >
-                  Get started with ChatLinky
+                  Get started with Linky
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </DialogTrigger>

@@ -34,7 +34,7 @@ export default function Home() {
       <MaxWidthWrapper className="flex-grow flex flex-col items-center justify-center text-center sm:pt-20 mt-20">
         <div className="mx-auto mb-8 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-zinc-700 bg-zinc-900 px-7 py-2 shadow-md backdrop-blur transition-all hover:border-zinc-700 hover:bg-zinc-800">
           <p className="text-sm font-semibold text-zinc-300">
-            ChatLinky is now public!
+            Linky is now public!
           </p>
         </div>
         <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl">
@@ -43,7 +43,7 @@ export default function Home() {
           <span className="text-blue-500">links</span> in seconds.
         </h1>
         <p className="mt-5 max-w-prose text-zinc-400 sm:text-lg">
-          ChatLinky allows you to have conversations with any website. Simply
+          Linky allows you to have conversations with any website. Simply
           add our website before links and start asking questions right away.
         </p>
 
@@ -142,7 +142,7 @@ export default function Home() {
               Start chatting in minutes
             </h2>
             <p className="mt-4 text-lg text-zinc-400">
-              Chatting to your links has never been easier than with ChatLinky
+              Chatting to your links has never been easier than with Linky
             </p>
           </div>
         </div>
@@ -179,7 +179,7 @@ export default function Home() {
                 Start asking questions
               </span>
               <span className="mt-2 text-zinc-400">
-                It&apos;s that simple. Try out ChatLinky today - it really takes
+                It&apos;s that simple. Try out Linky today - it really takes
                 less than a minute.
               </span>
             </div>

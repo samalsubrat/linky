@@ -30,13 +30,13 @@ export default function AboutPage() {
       <Navbar />
 
       <main className="container mx-auto px-4 pb-16 pt-32">
-        <h1 className="text-4xl font-bold mb-8 text-center">About ChatLinky</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">About Linky</h1>
 
         <div className="max-w-3xl mx-auto space-y-8">
           <section>
             <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
             <p className="text-zinc-300">
-              At ChatLinky, we&apos;re on a mission to revolutionize digital
+              At Linky, we&apos;re on a mission to revolutionize digital
               communication. We believe in the power of AI to enhance human
               interactions, streamline processes, and unlock new possibilities
               in how we connect and share information.
@@ -46,7 +46,7 @@ export default function AboutPage() {
           <section>
             <h2 className="text-2xl font-semibold mb-4">Our Story</h2>
             <p className="text-zinc-300">
-              Founded in 2024, ChatLinky emerged from a simple idea: what if we
+              Founded in 2024, Linky emerged from a simple idea: what if we
               could make AI-powered conversations as natural and effective as
               talking to a human expert? Our team of passionate developers,
               linguists, and AI specialists came together to turn this vision
@@ -100,7 +100,7 @@ export default function AboutPage() {
               and we invite you to be a part of it. Whether you&apos;re a
               business looking to enhance customer service, a developer
               interested in AI integration, or an individual curious about the
-              possibilities of conversational AI, ChatLinky is here to support
+              possibilities of conversational AI, Linky is here to support
               you.
             </p>
             <Dialog>
@@ -109,7 +109,7 @@ export default function AboutPage() {
                   className="mt-5 bg-blue-700 hover:bg-blue-800 text-white"
                   size="lg"
                 >
-                  Get started with ChatLinky
+                  Get started with Linky
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </DialogTrigger>

@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="border-t border-gray-800">
         <MaxWidthWrapper className="py-4 flex justify-between items-center">
           <span className="text-zinc-400">
-            &copy; 2024 ChatLinky. All rights reserved.
+            &copy; 2024 Linky. All rights reserved.
           </span>
           <div className="space-x-4">
             <Button variant="ghost" size="sm" className="text-zinc-400 hover:text-white hover:bg-zinc-800">Privacy Policy</Button>

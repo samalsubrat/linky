@@ -10,7 +10,7 @@ const Navbar = () => {
       <nav className="flex justify-between items-center">
         <a href="/" className="flex items-center space-x-2">
           <Bot className="w-8 h-8 text-blue-500" />
-          <span className="text-2xl font-bold">ChatLinky</span>
+          <span className="text-2xl font-bold">Linky</span>
         </a>
         <div className="space-x-4">
           <Button
