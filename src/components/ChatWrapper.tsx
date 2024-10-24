@@ -36,6 +36,7 @@ const ChatWrapper = ({
 
   useEffect(() => {
     if (url && Array.isArray(url)) {
+      console.log("Params URL:", url);  
       const reconstructedUrl = reconstructUrl(url); // Use the utility to reconstruct the URL
       setPreviewUrl(reconstructedUrl); // Set the iframe URL
     }
